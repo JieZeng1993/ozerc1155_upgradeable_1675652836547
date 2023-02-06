@@ -8,7 +8,7 @@ import "@openzeppelin/contracts-upgradeable/token/ERC1155/extensions/ERC1155Burn
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
 
-contract MyToken is Initializable, ERC1155Upgradeable, OwnableUpgradeable, PausableUpgradeable, ERC1155BurnableUpgradeable, UUPSUpgradeable {
+contract AirTravelToken is Initializable, ERC1155Upgradeable, OwnableUpgradeable, PausableUpgradeable, ERC1155BurnableUpgradeable, UUPSUpgradeable {
     /// @custom:oz-upgrades-unsafe-allow constructor
     constructor() {
         _disableInitializers();
@@ -20,7 +20,7 @@ contract MyToken is Initializable, ERC1155Upgradeable, OwnableUpgradeable, Pausa
     uint256 public constant TOKEN_C = 30;
     uint256 public constant TOKEN_SINGLE = 2;
     function initialize() initializer public {
-        __ERC1155_init("");
+        __ERC1155_init("https://game.example/api/item/{id}.json");
         __Ownable_init();
         __Pausable_init();
         __ERC1155Burnable_init();
