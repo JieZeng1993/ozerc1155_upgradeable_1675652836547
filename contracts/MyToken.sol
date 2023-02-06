@@ -14,12 +14,21 @@ contract MyToken is Initializable, ERC1155Upgradeable, OwnableUpgradeable, Pausa
         _disableInitializers();
     }
 
+
+    uint256 public constant TOKEN_A = 0;
+    uint256 public constant TOKEN_B = 1;
+    uint256 public constant TOKEN_C = 30;
+    uint256 public constant TOKEN_SINGLE = 2;
     function initialize() initializer public {
         __ERC1155_init("");
         __Ownable_init();
         __Pausable_init();
         __ERC1155Burnable_init();
         __UUPSUpgradeable_init();
+        _mint(msg.sender, TOKEN_A, 100, "");
+        _mint(msg.sender, TOKEN_B, 10, "");
+        _mint(msg.sender, TOKEN_C, 1000, "");
+        _mint(msg.sender, TOKEN_SINGLE, 1, "");
     }
 
     function setURI(string memory newuri) public onlyOwner {
