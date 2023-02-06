@@ -1,0 +1,209 @@
+{
+  "id": 5,
+  "network": "Goerli",
+  "deployments": {
+    "0xE3CAFd2d2Ada74f6cB41873A4A916E735736DccE": {
+      "date": "2023-02-06T05:07:44.008Z",
+      "contractName": "MyToken",
+      "fork": "london",
+      "implementationAddress": "0x6aA4BE332b3e39010313a3Ebe37b5a3F296C7Ddc",
+      "layout": {
+        "storage": [
+          {
+            "astId": 527,
+            "contract": "contracts/MyToken.sol:MyToken",
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8"
+          },
+          {
+            "astId": 530,
+            "contract": "contracts/MyToken.sol:MyToken",
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool"
+          },
+          {
+            "astId": 2789,
+            "contract": "contracts/MyToken.sol:MyToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 2893,
+            "contract": "contracts/MyToken.sol:MyToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 981,
+            "contract": "contracts/MyToken.sol:MyToken",
+            "label": "_balances",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_mapping(t_uint256,t_mapping(t_address,t_uint256))"
+          },
+          {
+            "astId": 987,
+            "contract": "contracts/MyToken.sol:MyToken",
+            "label": "_operatorApprovals",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_bool))"
+          },
+          {
+            "astId": 989,
+            "contract": "contracts/MyToken.sol:MyToken",
+            "label": "_uri",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 2196,
+            "contract": "contracts/MyToken.sol:MyToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_array(t_uint256)47_storage"
+          },
+          {
+            "astId": 10,
+            "contract": "contracts/MyToken.sol:MyToken",
+            "label": "_owner",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_address"
+          },
+          {
+            "astId": 130,
+            "contract": "contracts/MyToken.sol:MyToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_array(t_uint256)49_storage"
+          },
+          {
+            "astId": 846,
+            "contract": "contracts/MyToken.sol:MyToken",
+            "label": "_paused",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_bool"
+          },
+          {
+            "astId": 951,
+            "contract": "contracts/MyToken.sol:MyToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "202",
+            "type": "t_array(t_uint256)49_storage"
+          },
+          {
+            "astId": 2448,
+            "contract": "contracts/MyToken.sol:MyToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "251",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 509,
+            "contract": "contracts/MyToken.sol:MyToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "301",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 824,
+            "contract": "contracts/MyToken.sol:MyToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "351",
+            "type": "t_array(t_uint256)50_storage"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "encoding": "inplace",
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)47_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[47]",
+            "numberOfBytes": "1504"
+          },
+          "t_array(t_uint256)49_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "encoding": "inplace",
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32",
+            "value": "t_bool"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_bool))": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => mapping(address => bool))",
+            "numberOfBytes": "32",
+            "value": "t_mapping(t_address,t_bool)"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32",
+            "value": "t_uint256"
+          },
+          "t_mapping(t_uint256,t_mapping(t_address,t_uint256))": {
+            "encoding": "mapping",
+            "key": "t_uint256",
+            "label": "mapping(uint256 => mapping(address => uint256))",
+            "numberOfBytes": "32",
+            "value": "t_mapping(t_address,t_uint256)"
+          },
+          "t_string_storage": {
+            "encoding": "bytes",
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "encoding": "inplace",
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "encoding": "inplace",
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
