@@ -766,7 +766,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/MyToken.sol": "AirTravelToken"
+			"contracts/AirTravelToken.sol": "AirTravelToken"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -916,7 +916,7 @@
 				"dweb:/ipfs/QmcnbqX85tsWnUXPmtuPLE4SczME2sJaTfmqEFkuAJvWhy"
 			]
 		},
-		"contracts/MyToken.sol": {
+		"contracts/AirTravelToken.sol": {
 			"keccak256": "0x769e9cce50c91e6e6f4f0e37e1ade1d452cdbc42605a8e79075c71070ad81534",
 			"license": "MIT",
 			"urls": [
